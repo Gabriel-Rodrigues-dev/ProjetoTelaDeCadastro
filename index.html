@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <title>Tela de cadastro</title>
+</head>
+<body>
+
+    <div id="main"><!--Início (main)-->
+        <div id="formulario-cadastro"><!--Início cadastro-->
+
+            <h1>Cadastre-se aqui!</h1>
+
+            <form>
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
+
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome" required="requied"><br>
+
+                    <label for="sobrenome">Sobrenome:</label><br>
+                    <input type="text" name="sobrenome" id="sobrenome" required="requied"><br>
+
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" name="cpf" id="cpf" required="requied"><br>
+
+                    <label for="dtn">Data de nascimento:</label><br>
+                    <input type="date" name="dtn" id="dtn" required="requied">
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações de endereço:</legend>
+
+                    <label for="estado">Estado:</label><br>
+                    <select name="estado" id="estado">
+                        <option>MT</option>
+                        <option>GO</option>
+                        <option>SP</option>
+                        <option>MG</option>
+                        <option>PR</option>
+                        <option>RS</option>
+                        <option>RJ</option>
+                        <option>MS</option>
+                    </select><br>
+
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" name="cidade" id="cidade" required="requied"><br>
+
+                    <label for="bairro">Bairro:</label><br>
+                    <input type="text" name="bairro" id="bairro" required="requied"><br>
+
+                    <label for="rua/av">Rua/Av:</label><br>
+                    <input type="text" name="rua/av" id="rua/av"><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados do usuário:</legend>
+
+                    <label for="email">Digite seu email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Ex:computador123@gmail.com" required="requied"><br>
+
+                    <label for="senha">Digite sua senha:</label><br>
+                    <input type="password" name="senha" id="senha" required="requied"><br>
+
+                    <label for="ncelular">Numero de telefone/celular:</label><br>
+                    <input type="text" name="ncelular" id="ncelular" placeholder="Ex:(62)995...">
+
+                </fieldset>
+
+                <input class="form-submit-buttom" type="submit" value="Cadastrar-se">
+            </form>
+
+        </div><!--Fím cadastro-->
+    </div><!--Fím (main)-->
+
+</body>
+</html>
